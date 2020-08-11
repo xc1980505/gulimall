@@ -7,10 +7,16 @@ mybatis-plus:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.28.168:3306/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.28.168:8848
+  application:
+    name: gulimall-coupon
 server:
   port: 7000
 
