@@ -8,7 +8,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://122.51.238.52:3306/gulimall_ums?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://123.207.179.134:3306/gulimall_ums?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
   application:
@@ -16,6 +16,6 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr:  122.51.238.52:8848
+        server-addr:  123.207.179.134:8848
 server:
   port: 5000
